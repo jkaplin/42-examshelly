@@ -1,0 +1,72 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z3r2p17.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Sat Feb 16 16:16:20 PST 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190217/jkaplin
+
+= Git history ==================================================================
+$> git -C /var/folders/xd/rcm6_lvj7gz9rhqcwtd426lc0000gp/T/tmpLLo1eG/user log --pretty='%H - %an, %ad : %s'
+8ef66ab6becf42cc5cfa61bdfc5d43396011b99b - Joseph Kaplin, Sat Feb 16 16:16:11 2019 -0800 : 0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/xd/rcm6_lvj7gz9rhqcwtd426lc0000gp/T/tmpLLo1eG/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  240 Feb 16 16:16 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Feb 16 16:16 aff_a
+
+/var/folders/xd/rcm6_lvj7gz9rhqcwtd426lc0000gp/T/tmpLLo1eG/user/aff_a:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1163 Feb 16 16:16 aff_a.c
+ 
+= aff_a ========================================================================
+$> gcc -Wextra -Wall -Werror aff_a.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./hl80juzpqfuyt8rhjfa5ivx3 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./8hoeeysisqmz3ujlfabp1h6e "17" "23" "42"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./ri0kc25pii04eql6zho8p4oy "7UjXaDS6CG0Pxd1"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./48zace2gw17hvxhmm6x953pg "b95zVago7"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./kxwogol664k1rbwynf5354xb "g4UTBuSmZiJ"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./ykdn844bnh1vsfga18llwzyh "OSABIpJYh2"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

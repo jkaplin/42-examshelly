@@ -1,0 +1,94 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r9p33.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Tue Feb 12 12:58:53 PST 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/exam_20190212/jkaplin
+
+= Git history ==================================================================
+$> git -C /var/folders/sb/z_ztkll113b2njsp7rvrhkww0000gp/T/tmpMsH1FK/user log --pretty='%H - %an, %ad : %s'
+66bb3ac557c3b3611abdb5c47e9a50770640a5a7 - Exam 42, Tue Feb 12 12:58:40 2019 -0800 : sfd
+f115299f2cd4ec37fd5a46c9e20c298519f49bc6 - Exam 42, Tue Feb 12 11:45:51 2019 -0800 : sort_int_tab
+43ae1b1b83104db775d55e99b34cbf8a361de97d - Exam 42, Tue Feb 12 11:25:56 2019 -0800 : ft_itoa
+79d64342b4e2b602085d2721bd2ab2d15607db1b - Exam 42, Tue Feb 12 10:28:46 2019 -0800 : ft_atoi_base
+1bdea0a6659b2353f139fd5e1d6a5d48f85d4c32 - Exam 42, Tue Feb 12 09:47:38 2019 -0800 : do_op
+c2848ea1e38c1c0537e72d357fbee42686892d0e - Exam 42, Tue Feb 12 09:29:29 2019 -0800 : ulstr
+bb0a8287e182dec0aad1871069f15ee3e4de4d81 - Exam 42, Tue Feb 12 09:14:35 2019 -0800 : aff_first_param
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/sb/z_ztkll113b2njsp7rvrhkww0000gp/T/tmpMsH1FK/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1779 Feb 12 12:58 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 12 12:58 aff_first_param
+drwxr-xr-x  4 deepthought  deepthought   136 Feb 12 12:58 brackets
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 12 12:58 do_op
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 12 12:58 ft_atoi_base
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 12 12:58 ft_itoa
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 12 12:58 sort_int_tab
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 12 12:58 ulstr
+
+/var/folders/sb/z_ztkll113b2njsp7rvrhkww0000gp/T/tmpMsH1FK/user/aff_first_param:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1089 Feb 12 12:58 aff_first_param.c
+
+/var/folders/sb/z_ztkll113b2njsp7rvrhkww0000gp/T/tmpMsH1FK/user/brackets:
+total 32
+-rw-r--r--  1 deepthought  deepthought  12288 Feb 12 12:58 .brackets.c.swp
+-rw-r--r--  1 deepthought  deepthought   2077 Feb 12 12:58 brackets.c
+
+/var/folders/sb/z_ztkll113b2njsp7rvrhkww0000gp/T/tmpMsH1FK/user/do_op:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1473 Feb 12 12:58 do_op.c
+
+/var/folders/sb/z_ztkll113b2njsp7rvrhkww0000gp/T/tmpMsH1FK/user/ft_atoi_base:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1517 Feb 12 12:58 ft_atoi_base.c
+
+/var/folders/sb/z_ztkll113b2njsp7rvrhkww0000gp/T/tmpMsH1FK/user/ft_itoa:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1460 Feb 12 12:58 ft_itoa.c
+
+/var/folders/sb/z_ztkll113b2njsp7rvrhkww0000gp/T/tmpMsH1FK/user/sort_int_tab:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1199 Feb 12 12:58 sort_int_tab.c
+
+/var/folders/sb/z_ztkll113b2njsp7rvrhkww0000gp/T/tmpMsH1FK/user/ulstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1270 Feb 12 12:58 ulstr.c
+ 
+= brackets =====================================================================
+$> gcc -Wextra -Wall -Werror brackets.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./c64f47c7jpamoixelnqwguuy '(toto)'
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./yz0kiulr2t7s20cd5n0lgf84 '([)]'
+$> diff -U 3 user_output_test2 test2.output | cat -e
+--- user_output_test2	2019-02-12 12:58:54.000000000 -0800$
++++ test2.output	2019-02-12 12:58:54.000000000 -0800$
+@@ -1 +1 @@$
+-OK$
++Error$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

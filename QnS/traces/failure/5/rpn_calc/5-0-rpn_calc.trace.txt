@@ -1,0 +1,95 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r3p39.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Thu Feb 14 12:48:52 PST 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/exam_20190214/jkaplin
+
+= Git history ==================================================================
+$> git -C /var/folders/7b/14txbc2d7p33_w6st3pljp6w0000gp/T/tmphzzOPM/user log --pretty='%H - %an, %ad : %s'
+96415e35b4336a727379e379f0e067f622588caa - Exam 42, Thu Feb 14 12:48:43 2019 -0800 : 5
+23bf4b027e8b0b97502d05bf1c6d7e1a27aa05b0 - Exam 42, Thu Feb 14 12:11:51 2019 -0800 : 4
+6f443b878442ff5b86b1633737c8943371481e3d - Exam 42, Thu Feb 14 11:36:06 2019 -0800 : 4
+6c82e7fde793f07d7392cd7cd87808f02f4c5c78 - Exam 42, Thu Feb 14 09:57:55 2019 -0800 : 3
+d9520b3f903f61d569b56f0bf32620980c30a910 - Exam 42, Thu Feb 14 09:29:52 2019 -0800 : 2
+4dca24dd8b0b176b7baa90ef333281f45bedc4b4 - Exam 42, Thu Feb 14 09:13:06 2019 -0800 : 1
+2e1c7e5ac5d3937e90f6540fdf66f1226d369e09 - Exam 42, Thu Feb 14 09:09:28 2019 -0800 : 0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/7b/14txbc2d7p33_w6st3pljp6w0000gp/T/tmphzzOPM/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1706 Feb 14 12:48 __GIT_HISTORY
+drwxr-xr-x  4 deepthought  deepthought   136 Feb 14 12:48 flood_fill
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 14 12:48 ft_range
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 14 12:48 ft_swap
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 14 12:48 inter
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 14 12:48 maff_revalpha
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 14 12:48 rpn_calc
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 14 12:48 sort_list
+
+/var/folders/7b/14txbc2d7p33_w6st3pljp6w0000gp/T/tmphzzOPM/user/flood_fill:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1587 Feb 14 12:48 flood_fill.c
+-rw-r--r--  1 deepthought  deepthought  1075 Feb 14 12:48 lib.h
+
+/var/folders/7b/14txbc2d7p33_w6st3pljp6w0000gp/T/tmphzzOPM/user/ft_range:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1245 Feb 14 12:48 ft_range.c
+
+/var/folders/7b/14txbc2d7p33_w6st3pljp6w0000gp/T/tmphzzOPM/user/ft_swap:
+total 8
+-rw-r--r--  1 deepthought  deepthought  972 Feb 14 12:48 ft_swap.c
+
+/var/folders/7b/14txbc2d7p33_w6st3pljp6w0000gp/T/tmphzzOPM/user/inter:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1429 Feb 14 12:48 inter.c
+
+/var/folders/7b/14txbc2d7p33_w6st3pljp6w0000gp/T/tmphzzOPM/user/maff_revalpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1106 Feb 14 12:48 maff_revalpha.c
+
+/var/folders/7b/14txbc2d7p33_w6st3pljp6w0000gp/T/tmphzzOPM/user/rpn_calc:
+total 8
+-rw-r--r--  1 deepthought  deepthought  2016 Feb 14 12:48 main.c
+
+/var/folders/7b/14txbc2d7p33_w6st3pljp6w0000gp/T/tmphzzOPM/user/sort_list:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1303 Feb 14 12:48 sort_list.c
+ 
+= rpn_calc =====================================================================
+$> gcc -Wextra -Wall -Werror main.c -o user_exe 
+main.c:20:8: error: redefinition of 'c' with a different type: 'char' vs 'int'
+        char    c;
+                ^
+main.c:13:15: note: previous definition is here
+int             main(int c, char **v)
+                         ^
+main.c:26:16: error: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Werror,-Wimplicit-function-declaration]
+        all = (char *)malloc(sizeof(v[1]));
+                      ^
+main.c:26:16: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+main.c:31:3: error: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Werror,-Wimplicit-function-declaration]
+                printf("Error\n");
+                ^
+main.c:31:3: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+3 errors generated.
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 0 ===============================================================

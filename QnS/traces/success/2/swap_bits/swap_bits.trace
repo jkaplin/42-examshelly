@@ -1,0 +1,65 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z3r3p19.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Tue Feb 19 15:25:42 PST 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190219/jkaplin3
+
+= Git history ==================================================================
+$> git -C /var/folders/85/m1s9ln15165df2cxxxflncrh0000gp/T/tmpf1T43q/user log --pretty='%H - %an, %ad : %s'
+49b6bbfdf0b1f2a57d6a30ed7e9ea9de6831b4d5 - Joseph Kaplin, Tue Feb 19 15:25:36 2019 -0800 : 2
+6ee885d177463da07f7d4ba1db68a675f78c03ae - Joseph Kaplin, Tue Feb 19 15:22:00 2019 -0800 : 1
+9f63e0dc05c789eb7c2849020af7cf9354e9bfdb - Joseph Kaplin, Tue Feb 19 15:17:42 2019 -0800 : 0
+ad226a6d3d29d411007257712cd5c9f0cbc7889f - Joseph Kaplin, Tue Feb 19 15:13:45 2019 -0800 : 0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/85/m1s9ln15165df2cxxxflncrh0000gp/T/tmpf1T43q/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  950 Feb 19 15:25 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Feb 19 15:25 first_word
+drwxr-xr-x  3 deepthought  deepthought  102 Feb 19 15:25 ft_countdown
+drwxr-xr-x  3 deepthought  deepthought  102 Feb 19 15:25 hello
+drwxr-xr-x  3 deepthought  deepthought  102 Feb 19 15:25 swap_bits
+
+/var/folders/85/m1s9ln15165df2cxxxflncrh0000gp/T/tmpf1T43q/user/first_word:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1196 Feb 19 15:25 first_word.c
+
+/var/folders/85/m1s9ln15165df2cxxxflncrh0000gp/T/tmpf1T43q/user/ft_countdown:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1089 Feb 19 15:25 ft_countdown.c
+
+/var/folders/85/m1s9ln15165df2cxxxflncrh0000gp/T/tmpf1T43q/user/hello:
+total 8
+-rw-r--r--  1 deepthought  deepthought  996 Feb 19 15:25 hello.c
+
+/var/folders/85/m1s9ln15165df2cxxxflncrh0000gp/T/tmpf1T43q/user/swap_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  992 Feb 19 15:25 swap_bits.c
+ 
+= swap_bits ====================================================================
+$> gcc -Wextra -Wall -Werror main.c swap_bits.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./hjgro7w3e3y6ee15mxjen2x0
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

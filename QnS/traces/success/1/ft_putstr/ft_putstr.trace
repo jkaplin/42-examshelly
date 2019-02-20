@@ -1,0 +1,89 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r9p10.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Tue Feb 19 06:25:38 PST 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190219/jkaplin2
+
+= Git history ==================================================================
+$> git -C /var/folders/pp/ghbpwh054qz8lr1ptg0zfmvc0000gp/T/tmplOAkt0/user log --pretty='%H - %an, %ad : %s'
+6ef65d99144e05da422020bcb2a04c8b89ba8c93 - Joseph Kaplin, Tue Feb 19 06:25:29 2019 -0800 : 1
+054f9e105eb7d3098581d89540e65fa933e30d48 - Joseph Kaplin, Tue Feb 19 05:35:36 2019 -0800 : 0
+097c9318168fbc2e45562c46ab45f0773acb728f - Joseph Kaplin, Tue Feb 19 05:31:56 2019 -0800 : 0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/pp/ghbpwh054qz8lr1ptg0zfmvc0000gp/T/tmplOAkt0/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1892 Feb 19 06:25 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 19 06:25 ft_putstr
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 19 06:25 only_z
+
+/var/folders/pp/ghbpwh054qz8lr1ptg0zfmvc0000gp/T/tmplOAkt0/user/ft_putstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1028 Feb 19 06:25 ft_putstr.c
+
+/var/folders/pp/ghbpwh054qz8lr1ptg0zfmvc0000gp/T/tmplOAkt0/user/only_z:
+total 8
+-rwxr-xr-x  1 deepthought  deepthought  965 Feb 19 06:25 only_z.c
+ 
+= ft_putstr ====================================================================
+$> gcc -Wextra -Wall -Werror main.c ft_putstr.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./kvd3c0di7tkq6vtp6ggozzsd "bQWvRYw"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./qv2wt8xr6rzi7xqbwxjlvwm9 "fgMYjW7JKhdIRn28V"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./qzt13y7nt7ngg9xwj7bql1r0 "Lgdy4FlacY3MHX"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./azfwlv41trarapakofcu0gd5 "OVEXb kPzZVu5 EaVq 9dYVNn3H mPZbv3cTiVFDG"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./haforqqm6brx4ca2bluj3670 "Lu3N4KieaoqU2S bxjLcly2tTnW gGSu4BcwIWLU VEmsk4N9dqL8gx7C OjNQDxM6l5fod7 t7AuEGDWnHYQb bJP jsGdgq86Hxy 41DpJEvaBXV8r sjdcZ 6iJjn0kd7As 3uAeCMYti WptFqYZu2nsz0E6DO"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./pnjr9kvsmo79le5d9s6ngiu5 "QzFY XsJ5lhqQutVnY wLzDiAMBEdvOT1 EBmdSJ"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./et1kquyaq979wpe1y64klh72 "D4hSOtCfB Czb60c7YHBaiMT TN5 7bDXn bWN 6Ob1 9TLR CqxgJkzrwBQ6ud LGaHjrE9 m27hZWNrjFPeL 0R6TIoX B08eY9k tuCXINS0Koa"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./a6x82cb5hsmvt3orv4ufkatd 
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

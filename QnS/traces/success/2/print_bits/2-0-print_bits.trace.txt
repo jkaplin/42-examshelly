@@ -1,0 +1,59 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z4r6p25.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Fri Nov  9 18:32:40 PST 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/piscine-c-exam02/exam_20181110/jkaplin
+
+= Git history ==================================================================
+$> git -C /var/folders/sl/z_d6p5xs6pj8tq7vrjhjp9n00000gp/T/tmpfbNqkz/user log --pretty='%H - %an, %ad : %s'
+03ef13022801159af31819ab4212a7b48ea709a8 - Exam 42, Fri Nov 9 18:32:27 2018 -0800 : 3
+2469ad31dff280a395924f5e333f5505efb24cfe - Exam 42, Fri Nov 9 18:20:48 2018 -0800 : 2
+c376ed13203902252275ae9af091230b5ac1546c - Exam 42, Fri Nov 9 18:05:44 2018 -0800 : 1
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/sl/z_d6p5xs6pj8tq7vrjhjp9n00000gp/T/tmpfbNqkz/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  680 Nov  9 18:32 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Nov  9 18:32 only_a
+drwxr-xr-x  3 deepthought  deepthought  102 Nov  9 18:32 print_bits
+drwxr-xr-x  3 deepthought  deepthought  102 Nov  9 18:32 repeat_alpha
+
+/var/folders/sl/z_d6p5xs6pj8tq7vrjhjp9n00000gp/T/tmpfbNqkz/user/only_a:
+total 8
+-rw-r--r--  1 deepthought  deepthought  965 Nov  9 18:32 only_a.c
+
+/var/folders/sl/z_d6p5xs6pj8tq7vrjhjp9n00000gp/T/tmpfbNqkz/user/print_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1083 Nov  9 18:32 print_bits.c
+
+/var/folders/sl/z_d6p5xs6pj8tq7vrjhjp9n00000gp/T/tmpfbNqkz/user/repeat_alpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1463 Nov  9 18:32 repeat_alpha.c
+ 
+= print_bits ===================================================================
+$> gcc -Wextra -Wall -Werror main.c print_bits.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./scs4eh5ikzkkflsym6fc55g3
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

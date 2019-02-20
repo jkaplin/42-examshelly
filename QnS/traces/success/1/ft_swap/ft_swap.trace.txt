@@ -1,0 +1,111 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z4r9p26.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Fri Oct 26 19:32:17 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/piscine-c-exam00/exam_20181027/jkaplin
+
+= Git history ==================================================================
+$> git -C /var/folders/tc/wn435btx0cn8kft1c82yqv3r0000gp/T/tmpxCFC5E/user log --pretty='%H - %an, %ad : %s'
+25fadccba127070b061f392b231ab23b2032b39c - Exam 42, Fri Oct 26 19:31:58 2018 -0700 : ft_swap.c
+d65e096b9ddaed6ac46705c9f72edfc84a5ab23b - Exam 42, Fri Oct 26 19:21:12 2018 -0700 : ft_strrev.c
+ac5ffe75d04188cae70a01ced9f1087c5b4e9647 - Exam 42, Fri Oct 26 18:56:16 2018 -0700 : maff_revalapha.c
+9930d8d3fc3f2b512f450ecf2de276879449e37c - Exam 42, Fri Oct 26 18:38:09 2018 -0700 : ft_print_numbers.c
+c8c6ca3bc700a405daeb306c6c92e7b10b7921e9 - Exam 42, Fri Oct 26 18:22:27 2018 -0700 : only_z.c
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/tc/wn435btx0cn8kft1c82yqv3r0000gp/T/tmpxCFC5E/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1178 Oct 26 19:32 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 26 19:32 ft_print_numbers
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 26 19:32 ft_strrev
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 26 19:32 ft_swap
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 26 19:32 maff_revalpha
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 26 19:32 only_z
+
+/var/folders/tc/wn435btx0cn8kft1c82yqv3r0000gp/T/tmpxCFC5E/user/ft_print_numbers:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1035 Oct 26 19:32 ft_print_numbers.c
+
+/var/folders/tc/wn435btx0cn8kft1c82yqv3r0000gp/T/tmpxCFC5E/user/ft_strrev:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1094 Oct 26 19:32 ft_strev.c
+
+/var/folders/tc/wn435btx0cn8kft1c82yqv3r0000gp/T/tmpxCFC5E/user/ft_swap:
+total 8
+-rw-r--r--  1 deepthought  deepthought  971 Oct 26 19:32 ft_swap.c
+
+/var/folders/tc/wn435btx0cn8kft1c82yqv3r0000gp/T/tmpxCFC5E/user/maff_revalpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1137 Oct 26 19:32 maff_revalpha.c
+
+/var/folders/tc/wn435btx0cn8kft1c82yqv3r0000gp/T/tmpxCFC5E/user/only_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  965 Oct 26 19:32 only_z.c
+ 
+= ft_swap ======================================================================
+$> gcc -Wextra -Wall -Werror ft_swap.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./iyxyja34hnxf61ie7scz23z3 "-1436246841" "-766812649"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./rw732581mr08h0ehms465vzg "956741958" "-1129810310"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./3hg3kxewdza4r3a3vrrzd5mz "-167372860" "-1017274856"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./wrjvcdz3pifj0dh2neyqwu1d "515016578" "477612895"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./8sgcw9oh7ywvopy5s5y29p7y "-1866420545" "1785232880"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./vgvem62d5kko5oab1lsd2cao "-1334846277" "1910235737"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./n2pwh75mas6kg4nftcivjw5g "-947281328" "1398432442"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./bb7urt77let7y2b2wc20vd5x "25796822" "-2110078420"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./lv1z69a95fm8onjp0yc0rjd6 "-1496075527" "1166516031"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

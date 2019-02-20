@@ -1,0 +1,92 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r2p13.42.us.org
+Darwin 17.2.0 x86_64
+$> date
+Fri Nov  2 22:00:03 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.2)
+Target: x86_64-apple-darwin17.2.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.2)
+Target: x86_64-apple-darwin17.2.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/piscine-c-exam01/exam_20181103/jkaplin
+
+= Git history ==================================================================
+$> git -C /var/folders/bk/h1m8wccx5qz6lyxpql3xdz500000gp/T/tmpz0cM35/user log --pretty='%H - %an, %ad : %s'
+881a53f59cffe1a77e56ffd84d3ffd5542d4ba58 - Exam 42, Fri Nov 2 21:59:38 2018 -0700 : wer
+23013811742de639d4806534d2c7cd46a4490477 - Exam 42, Fri Nov 2 21:58:05 2018 -0700 : ds
+01780e5e21398ef562ff925648dd329647ac0677 - Exam 42, Fri Nov 2 19:32:49 2018 -0700 : str_capitalizer
+aa1d4b78fee10f9e6b2ebac8339982263f6a50c6 - Exam 42, Fri Nov 2 18:47:30 2018 -0700 : ft_strcmp
+171e3d2f5913080ffaf118f1801aa907f0418eb5 - Exam 42, Fri Nov 2 18:26:12 2018 -0700 : rotone
+d6f2ed309e1e772eb00dc36bb1126e25680bfe71 - Exam 42, Fri Nov 2 18:08:24 2018 -0700 : only_z
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/bk/h1m8wccx5qz6lyxpql3xdz500000gp/T/tmpz0cM35/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1458 Nov  2 22:00 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Nov  2 22:00 ft_strcmp
+drwxr-xr-x  3 deepthought  deepthought   102 Nov  2 22:00 only_z
+drwxr-xr-x  3 deepthought  deepthought   102 Nov  2 22:00 rev_wstr
+drwxr-xr-x  3 deepthought  deepthought   102 Nov  2 22:00 rostring
+drwxr-xr-x  3 deepthought  deepthought   102 Nov  2 22:00 rotone
+drwxr-xr-x  3 deepthought  deepthought   102 Nov  2 22:00 str_capitalizer
+
+/var/folders/bk/h1m8wccx5qz6lyxpql3xdz500000gp/T/tmpz0cM35/user/ft_strcmp:
+total 8
+-rwxr-xr-x  1 deepthought  deepthought  1156 Nov  2 22:00 ft_strcmp.c
+
+/var/folders/bk/h1m8wccx5qz6lyxpql3xdz500000gp/T/tmpz0cM35/user/only_z:
+total 8
+-rwxr-xr-x  1 deepthought  deepthought  965 Nov  2 22:00 only_z.c
+
+/var/folders/bk/h1m8wccx5qz6lyxpql3xdz500000gp/T/tmpz0cM35/user/rev_wstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1655 Nov  2 22:00 rev_wstr.c
+
+/var/folders/bk/h1m8wccx5qz6lyxpql3xdz500000gp/T/tmpz0cM35/user/rostring:
+total 8
+-rwxr-xr-x  1 deepthought  deepthought  2658 Nov  2 22:00 rostring.c
+
+/var/folders/bk/h1m8wccx5qz6lyxpql3xdz500000gp/T/tmpz0cM35/user/rotone:
+total 8
+-rwxr-xr-x  1 deepthought  deepthought  1310 Nov  2 22:00 rotone.c
+
+/var/folders/bk/h1m8wccx5qz6lyxpql3xdz500000gp/T/tmpz0cM35/user/str_capitalizer:
+total 8
+-rwxr-xr-x  1 deepthought  deepthought  1713 Nov  2 22:00 str_capitalizer.c
+ 
+= rev_wstr =====================================================================
+$> gcc -Wextra -Wall -Werror rev_wstr.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./5azhhyer5q6rorp71ybr02jo 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./bk5bh9xxbewyjiyd6hvp6tkd "salut" "a" "tous" "tout" "le" "monde"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./6gfdgug990uqgqd4prc08x4n "6iAlpb"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+--- user_output_test3	2018-11-02 22:00:06.000000000 -0700$
++++ test3.output	2018-11-02 22:00:06.000000000 -0700$
+@@ -1 +1 @@$
+-6iAlpb $
++6iAlpb$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

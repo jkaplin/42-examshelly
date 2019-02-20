@@ -1,0 +1,53 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r3p34.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Fri Oct 26 18:38:36 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/piscine-c-exam00/exam_20181027/jkaplin
+
+= Git history ==================================================================
+$> git -C /var/folders/7l/m2k7nchj16x_drdzcbqjrxd00000gp/T/tmprZfFZe/user log --pretty='%H - %an, %ad : %s'
+9930d8d3fc3f2b512f450ecf2de276879449e37c - Exam 42, Fri Oct 26 18:38:09 2018 -0700 : ft_print_numbers.c
+c8c6ca3bc700a405daeb306c6c92e7b10b7921e9 - Exam 42, Fri Oct 26 18:22:27 2018 -0700 : only_z.c
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/7l/m2k7nchj16x_drdzcbqjrxd00000gp/T/tmprZfFZe/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  469 Oct 26 18:38 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Oct 26 18:38 ft_print_numbers
+drwxr-xr-x  3 deepthought  deepthought  102 Oct 26 18:38 only_z
+
+/var/folders/7l/m2k7nchj16x_drdzcbqjrxd00000gp/T/tmprZfFZe/user/ft_print_numbers:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1035 Oct 26 18:38 ft_print_numbers.c
+
+/var/folders/7l/m2k7nchj16x_drdzcbqjrxd00000gp/T/tmprZfFZe/user/only_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  965 Oct 26 18:38 only_z.c
+ 
+= ft_print_numbers =============================================================
+$> gcc -Wextra -Wall -Werror main.c ft_print_numbers.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./pvctq8wnwkjrnrifzy7gfclh
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

@@ -1,0 +1,66 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r6p42.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Fri Oct 26 19:21:34 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/piscine-c-exam00/exam_20181027/jkaplin
+
+= Git history ==================================================================
+$> git -C /var/folders/82/wwxb0jmx25j2t8g1s7qp92q00000gp/T/tmppMsaJZ/user log --pretty='%H - %an, %ad : %s'
+d65e096b9ddaed6ac46705c9f72edfc84a5ab23b - Exam 42, Fri Oct 26 19:21:12 2018 -0700 : ft_strrev.c
+ac5ffe75d04188cae70a01ced9f1087c5b4e9647 - Exam 42, Fri Oct 26 18:56:16 2018 -0700 : maff_revalapha.c
+9930d8d3fc3f2b512f450ecf2de276879449e37c - Exam 42, Fri Oct 26 18:38:09 2018 -0700 : ft_print_numbers.c
+c8c6ca3bc700a405daeb306c6c92e7b10b7921e9 - Exam 42, Fri Oct 26 18:22:27 2018 -0700 : only_z.c
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/82/wwxb0jmx25j2t8g1s7qp92q00000gp/T/tmppMsaJZ/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  957 Oct 26 19:21 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Oct 26 19:21 ft_print_numbers
+drwxr-xr-x  3 deepthought  deepthought  102 Oct 26 19:21 ft_strrev
+drwxr-xr-x  3 deepthought  deepthought  102 Oct 26 19:21 maff_revalpha
+drwxr-xr-x  3 deepthought  deepthought  102 Oct 26 19:21 only_z
+
+/var/folders/82/wwxb0jmx25j2t8g1s7qp92q00000gp/T/tmppMsaJZ/user/ft_print_numbers:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1035 Oct 26 19:21 ft_print_numbers.c
+
+/var/folders/82/wwxb0jmx25j2t8g1s7qp92q00000gp/T/tmppMsaJZ/user/ft_strrev:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1094 Oct 26 19:21 ft_strev.c
+
+/var/folders/82/wwxb0jmx25j2t8g1s7qp92q00000gp/T/tmppMsaJZ/user/maff_revalpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1137 Oct 26 19:21 maff_revalpha.c
+
+/var/folders/82/wwxb0jmx25j2t8g1s7qp92q00000gp/T/tmppMsaJZ/user/only_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  965 Oct 26 19:21 only_z.c
+ 
+= ft_strrev ====================================================================
+$> gcc -Wextra -Wall -Werror main.c -o user_exe 
+Undefined symbols for architecture x86_64:
+  "_ft_strrev", referenced from:
+      _main in main-7de24e.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 0 ===============================================================

@@ -1,0 +1,19 @@
+Test System for functions / programs:
+
+
+
+0. To create a main file for each function that has no main, each main file is considered a test by itself: test_(NAME)_(NUMBER).c
+1. Compile the function (NAME) with tests, each test gives a different output file: test_1 gives us the output file (NAME)_1.out
+gcc -Wall -Werror -Wextra test_(NAME)_(NUMNER).c (NAME).c -o (NAME)_(NUMBER).out
+2. Once we have the compiled files then we create a txt file (NAME)_(NUMBER).txt with the output of running the test
+./(NAME)_(NUMBER).out >> (NAME)_(NUMBER).out.txt
+3. And lastly we have our expected output file for every test : (NAME)_(NUMBER).expected.txt
+and we put the difference of that file with their file into a trace (NAME)_(NUMBER).trace:
+echo "(NAME)_(NUMBER).out.txt:\n" >> (NAME)_(NUMBER).trace
+cat (NAME)_(NUMBER).out.txt >> (NAME)_(NUMBER).trace
+echo "\n(NAME)_(NUMBER).expected.txt:\n" >> (NAME)_(NUMBER).trace
+cat (NAME)_(NUMBER).out.txt >> (NAME)_(NUMBER).trace
+echo "\nDIFF:\n" >> (NAME)_(NUMBER).trace
+diff (NAME)_(NUMBER).out.txt (NAME)_(NUMBER).expected.txt >> (NAME)_(NUMBER).trace
+if (diff // == 0) print success and more consecuences
+else print failure and more consecuences for exam stuff...

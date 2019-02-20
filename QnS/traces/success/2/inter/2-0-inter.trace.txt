@@ -1,0 +1,154 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r5p25.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Thu Feb 14 09:30:11 PST 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 10.0.0 (clang-1000.10.44.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 10.0.0 (clang-1000.10.44.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/exam_20190214/jkaplin
+
+= Git history ==================================================================
+$> git -C /var/folders/lx/bzyhsfbj513fclrtp75vqdyw0000gp/T/tmpbMptcr/user log --pretty='%H - %an, %ad : %s'
+d9520b3f903f61d569b56f0bf32620980c30a910 - Exam 42, Thu Feb 14 09:29:52 2019 -0800 : 2
+4dca24dd8b0b176b7baa90ef333281f45bedc4b4 - Exam 42, Thu Feb 14 09:13:06 2019 -0800 : 1
+2e1c7e5ac5d3937e90f6540fdf66f1226d369e09 - Exam 42, Thu Feb 14 09:09:28 2019 -0800 : 0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/lx/bzyhsfbj513fclrtp75vqdyw0000gp/T/tmpbMptcr/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  694 Feb 14 09:30 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Feb 14 09:30 ft_swap
+drwxr-xr-x  3 deepthought  deepthought  102 Feb 14 09:30 inter
+drwxr-xr-x  3 deepthought  deepthought  102 Feb 14 09:30 maff_revalpha
+
+/var/folders/lx/bzyhsfbj513fclrtp75vqdyw0000gp/T/tmpbMptcr/user/ft_swap:
+total 8
+-rw-r--r--  1 deepthought  deepthought  972 Feb 14 09:30 ft_swap.c
+
+/var/folders/lx/bzyhsfbj513fclrtp75vqdyw0000gp/T/tmpbMptcr/user/inter:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1429 Feb 14 09:30 inter.c
+
+/var/folders/lx/bzyhsfbj513fclrtp75vqdyw0000gp/T/tmpbMptcr/user/maff_revalpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1106 Feb 14 09:30 maff_revalpha.c
+ 
+= inter ========================================================================
+$> gcc -Wextra -Wall -Werror inter.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./w4x93x027g4cmvmw8i16vhy6 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./ayldnwqxgl8wkdqxmlc6mmr3 "salut a tous tout le monde"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./5di49tbqypfrsuz9r44elt52 "salut" "a" "tous" "tout" "le" "monde"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./wg425bzn90gjgn9j1kr0vg3f "llo" "helllo"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./pikha06rppc7nnzo4rxqq04j "T8EcqQ" "8cQ"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./ajsaqqudpea1rzm3i7pkz3ax "KexHUOTM70sdrbF" "wO5mftIHTvU86"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./8yd95cv24fn1ormq0lwvmw9e "69ezPaS23toJLUZ5" "N5BVkCuI7W6qRep"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./fy7fqk763ehskf8x1jnok30f "CiBOk2oqt4SVuh" "MGjOFqS1nCP9wQrh"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./7z14yzs3sd9s0ifcrlccbid5 "H1y4Yh9jUmA" "HyhjmA"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./d7w9bsnbljxcezj1cyhp0ha4 "gTUtecSD" "gUcD"
+$> diff -U 3 user_output_test10 test10.output | cat -e
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./1a7genog6vtlyy8adv1qj0ch "13HNMPrqsCQ" "3NPrs"
+$> diff -U 3 user_output_test11 test11.output | cat -e
+
+Diff OK :D
+= Test 12 ==================================================
+$> ./9sthqa96g1gzrxh24iso1w6l "I9wYLjgCeArv" "PzgsKTj"
+$> diff -U 3 user_output_test12 test12.output | cat -e
+
+Diff OK :D
+= Test 13 ==================================================
+$> ./v4yphpun57hggbw3jzknb631 "TZkbUjpMv42zY" "Hxbh"
+$> diff -U 3 user_output_test13 test13.output | cat -e
+
+Diff OK :D
+= Test 14 ==================================================
+$> ./mlrwk3yed2oi0j57baxmdq1y "wavh5QnDdxmE1keLJ" "i4jlfqv"
+$> diff -U 3 user_output_test14 test14.output | cat -e
+
+Diff OK :D
+= Test 15 ==================================================
+$> ./f25rewkk6ohz0i3z45tyu3oa "dljpa7LZf8EBY2vGR" "laZfB2R"
+$> diff -U 3 user_output_test15 test15.output | cat -e
+
+Diff OK :D
+= Test 16 ==================================================
+$> ./gequqwcjv9ou1erm8syrl5ws "vSIBXgwic" "Aj90OEea"
+$> diff -U 3 user_output_test16 test16.output | cat -e
+
+Diff OK :D
+= Test 17 ==================================================
+$> ./krgau3gwo9b9fj9ndoqbvf7f "teIS7T6Y5yaBv" "e7Yav"
+$> diff -U 3 user_output_test17 test17.output | cat -e
+
+Diff OK :D
+= Test 18 ==================================================
+$> ./lencr8fg3wdtgzabtcmvn1m1 "uC2xEerjZkoT8FsIH" "2Ejo8I"
+$> diff -U 3 user_output_test18 test18.output | cat -e
+
+Diff OK :D
+= Test 19 ==================================================
+$> ./v1y32toawzqy3oystoaafef5 "fi6yBDKRcv8" "6DRv8"
+$> diff -U 3 user_output_test19 test19.output | cat -e
+
+Diff OK :D
+= Test 20 ==================================================
+$> ./dlbuifn4t3htebrunuzpw4ee "whTkm3lb" "hTmb"
+$> diff -U 3 user_output_test20 test20.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

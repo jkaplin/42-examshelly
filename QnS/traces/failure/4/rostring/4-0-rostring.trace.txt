@@ -1,0 +1,59 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z4r9p12.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Fri Nov  2 21:12:42 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/piscine-c-exam01/exam_20181103/jkaplin
+
+= Git history ==================================================================
+$> git -C /var/folders/kb/xhj0lppj1134y3pfydm57bdm0000gp/T/tmpVxMrxH/user log --pretty='%H - %an, %ad : %s'
+01780e5e21398ef562ff925648dd329647ac0677 - Exam 42, Fri Nov 2 19:32:49 2018 -0700 : str_capitalizer
+aa1d4b78fee10f9e6b2ebac8339982263f6a50c6 - Exam 42, Fri Nov 2 18:47:30 2018 -0700 : ft_strcmp
+171e3d2f5913080ffaf118f1801aa907f0418eb5 - Exam 42, Fri Nov 2 18:26:12 2018 -0700 : rotone
+d6f2ed309e1e772eb00dc36bb1126e25680bfe71 - Exam 42, Fri Nov 2 18:08:24 2018 -0700 : only_z
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/kb/xhj0lppj1134y3pfydm57bdm0000gp/T/tmpVxMrxH/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  940 Nov  2 21:12 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Nov  2 21:12 ft_strcmp
+drwxr-xr-x  3 deepthought  deepthought  102 Nov  2 21:12 only_z
+drwxr-xr-x  3 deepthought  deepthought  102 Nov  2 21:12 rotone
+drwxr-xr-x  3 deepthought  deepthought  102 Nov  2 21:12 str_capitalizer
+
+/var/folders/kb/xhj0lppj1134y3pfydm57bdm0000gp/T/tmpVxMrxH/user/ft_strcmp:
+total 8
+-rwxr-xr-x  1 deepthought  deepthought  1156 Nov  2 21:12 ft_strcmp.c
+
+/var/folders/kb/xhj0lppj1134y3pfydm57bdm0000gp/T/tmpVxMrxH/user/only_z:
+total 8
+-rwxr-xr-x  1 deepthought  deepthought  965 Nov  2 21:12 only_z.c
+
+/var/folders/kb/xhj0lppj1134y3pfydm57bdm0000gp/T/tmpVxMrxH/user/rotone:
+total 8
+-rwxr-xr-x  1 deepthought  deepthought  1310 Nov  2 21:12 rotone.c
+
+/var/folders/kb/xhj0lppj1134y3pfydm57bdm0000gp/T/tmpVxMrxH/user/str_capitalizer:
+total 8
+-rwxr-xr-x  1 deepthought  deepthought  1713 Nov  2 21:12 str_capitalizer.c
+ 
+= rostring =====================================================================
+Nothing turned in
+Grade: 0
+
+= Final grade: 0 ===============================================================

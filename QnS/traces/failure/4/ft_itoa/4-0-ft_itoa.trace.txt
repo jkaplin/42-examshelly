@@ -1,0 +1,96 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z4r15p4.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Tue Feb 12 11:26:36 PST 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/exam_20190212/jkaplin
+
+= Git history ==================================================================
+$> git -C /var/folders/22/8m0z06ks4t1gkmkflvdg7rc00000gp/T/tmpMmu4Oo/user log --pretty='%H - %an, %ad : %s'
+43ae1b1b83104db775d55e99b34cbf8a361de97d - Exam 42, Tue Feb 12 11:25:56 2019 -0800 : ft_itoa
+79d64342b4e2b602085d2721bd2ab2d15607db1b - Exam 42, Tue Feb 12 10:28:46 2019 -0800 : ft_atoi_base
+1bdea0a6659b2353f139fd5e1d6a5d48f85d4c32 - Exam 42, Tue Feb 12 09:47:38 2019 -0800 : do_op
+c2848ea1e38c1c0537e72d357fbee42686892d0e - Exam 42, Tue Feb 12 09:29:29 2019 -0800 : ulstr
+bb0a8287e182dec0aad1871069f15ee3e4de4d81 - Exam 42, Tue Feb 12 09:14:35 2019 -0800 : aff_first_param
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/22/8m0z06ks4t1gkmkflvdg7rc00000gp/T/tmpMmu4Oo/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1229 Feb 12 11:26 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 12 11:26 aff_first_param
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 12 11:26 do_op
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 12 11:26 ft_atoi_base
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 12 11:26 ft_itoa
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 12 11:26 ulstr
+
+/var/folders/22/8m0z06ks4t1gkmkflvdg7rc00000gp/T/tmpMmu4Oo/user/aff_first_param:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1089 Feb 12 11:26 aff_first_param.c
+
+/var/folders/22/8m0z06ks4t1gkmkflvdg7rc00000gp/T/tmpMmu4Oo/user/do_op:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1473 Feb 12 11:26 do_op.c
+
+/var/folders/22/8m0z06ks4t1gkmkflvdg7rc00000gp/T/tmpMmu4Oo/user/ft_atoi_base:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1517 Feb 12 11:26 ft_atoi_base.c
+
+/var/folders/22/8m0z06ks4t1gkmkflvdg7rc00000gp/T/tmpMmu4Oo/user/ft_itoa:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1460 Feb 12 11:26 ft_itoa.c
+
+/var/folders/22/8m0z06ks4t1gkmkflvdg7rc00000gp/T/tmpMmu4Oo/user/ulstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1270 Feb 12 11:26 ulstr.c
+ 
+= ft_itoa ======================================================================
+$> gcc -Wextra -Wall -Werror main.c ft_itoa.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./qfmlkhhrh9io9poitix5gwrd 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./st3x0a05swljpfptk313fyny "1" "2" "3" "4" "5" "6"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./skylsb2kr49e4qd6rmblctv2 0
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./t4tmbytogrgc74rk65f3f5gg 2147483647
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./5lejegxldgzztw0hhsth1dat -2147483648
+$> diff -U 3 user_output_test5 test5.output | cat -e
+--- user_output_test5	2019-02-12 11:26:39.000000000 -0800$
++++ test5.output	2019-02-12 11:26:38.000000000 -0800$
+@@ -1 +1 @@$
+--./,),(-*,($
++-2147483648$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================
